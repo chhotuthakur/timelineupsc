@@ -19,21 +19,68 @@
                   var content = '';
                   snapshot.forEach(function(data){
                       var val = data.val();
-                      content +='<li>';       
-                      content += '<h3>' + val.title + '</td>';
-                      content += '<p>' + val.content + '</td>';
+                      // content +='<div class="timeline">';
+                      // content +=' <div class="outer">';
+                      content +='<div class="card" id="card">';
+                      content +='<div class+"info">';       
+                      content += '<h3 class="title">' + val.title + '</h3>';
+                      content += '<p>' + val.content + '</p>';
                 
-                      content += '</li>';
-                      
+                      content += '</div>';
+                      content += '</div>';
+                      // content += '</div>';
+                      // content += '</div>';
                   });
-                  $('#table1').append(content);
+                  $('#info').append(content);
               }
           });
         </script>
 </head>
 <body>
-    <!-- Start Timeline -->
-<section id= "timeline">
+
+  <div class="timeline">
+    <div class="outer">
+      <div class="card" id="card"><br>
+        <div class="info" id="info">
+         
+          </p>
+        </div>
+      </div>
+     
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+ <!-- <div class="card">
+        <div class="info">
+          <h3 class="title">Title 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+      </div> -->
+      <!-- <div class="card">
+        <div class="info">
+          <h3 class="title">Title 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+      </div> -->
+      <!-- <div class="card">
+        <div class="info">
+          <h3 class="title">Title 4</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+      </div> -->
+      <!-- <div class="card">
+        <div class="info">
+          <h3 class="title">Title 5</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div> -->
+
+
+            <!-- Start Timeline -->
+<!-- <section id= "timeline">
     <ul class= "line">
       <li>
         <div class="cont">
@@ -46,10 +93,32 @@
       </li>
       
     </ul>
+    <table id="timeline">
+        <tr class="line">
+          <td>title</td>
+          <td>content</td>
+          <td>identitas</td>
+          <td>layanan</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="item in list">
+          <td>{{item.alamat}}</td>
+          <td>{{item.email}}</td>
+          <td>{{item.identitas}}</td>
+          <td>{{item.layanan}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+
     <p class="copy-right"> a pen by
       <a href="https://twitter.com/Hamadafayyad">@Hamadafayad</a>
     </p>
-  </section>
+  </section> -->
   <!-- End Timeline -->
-</body>
-</html>
